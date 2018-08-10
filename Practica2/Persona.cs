@@ -6,24 +6,26 @@ using System.Threading.Tasks;
 
 namespace PracticaObjetos
 {
-    class Persona
+     class Persona
     {
+        //Modificadores de acceso
+        //public y private 
         //Atributos
         //Definir a través de variables
-        string nombre;
-        string apellidos;
-        string fechaNacimiento;
-        int edad;
-        float altura;
+        public string nombre;
+        public string apellidos;
+        public string fechaNacimiento;
+        public int edad;
+        public float altura;
 
         //Métodos
         //Definidos a través de funciones
-        void cumplirAños()
+        public void cumplirAños()
         {
-            edad++; ;
+            edad++;
         }
 
-        void crecimiento(float cantidadCrecimiento)
+        public void crecimiento(float cantidadCrecimiento )
         {
             altura += cantidadCrecimiento;
         }
