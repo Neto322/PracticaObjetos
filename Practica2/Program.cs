@@ -10,20 +10,25 @@ namespace PracticaObjetos
     {
         static void Main(string[] args)
         {
-            //Declaración de variable
-            Persona persona1;
-            //Creación de instancia, alojamiento en memoria
-            persona1 = new Persona();
-            persona1.nombre = "Juan";
-            persona1.apellidos = "Perez";
-            persona1.edad = 20;
-            persona1.altura = 1.5f;
-            Console.WriteLine("Hallo!! " + persona1.nombre + " " + persona1.apellidos + " yo shoi un mago y usted tiene " + persona1.edad + " años y mide " + persona1.altura);
-            persona1.cumplirAños();
-            persona1.crecimiento(2);
-            Console.WriteLine("Wooosshh!! ahora tiene " + persona1.edad + " años y su altura es " + persona1.altura);
-            Console.ReadLine();
+            Contacto contacto1 = new Contacto();
+            contacto1.Nombre = "Pedrito";
+            contacto1.TelefonoCasa = "(644) 115 - 2514";
+            contacto1.Dirreccion = "Avenida de anita 2314";
+
+            Console.WriteLine("Nombre: " + contacto1.Nombre);
+            Console.WriteLine("Telefono de casa " + contacto1.TelefonoCasa);
             
+            Contacto contacto2 = new Contacto("Maria Navarro","(644) 02 12 32","23343545","Enrique Segobiano","MariaNav21@jotmeil.com");
+
+            Console.WriteLine("Contacto 2");
+            Console.WriteLine("Nombre: " + contacto2.Nombre);
+            Console.WriteLine("Numero Casa " + contacto2.TelefonoCasa);
+            Console.WriteLine("Numero Celular: " + contacto2.TelefonoCelular);
+            Console.WriteLine("Dirrecion " + contacto2.Dirreccion);
+            Console.WriteLine("Correo " + contacto2.CorreoElectronico);
+
+            Console.ReadLine();
+
         }
     }
 }
